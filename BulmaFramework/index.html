@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with Bulma</title>
+  <!-- Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+<body>
+
+  <nav class="navbar has-shadow is-white">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="assets/logo.png" alt="site-logo" style="max-height: 70px;" class="py-2 px-2">
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="link">
+      <div class="navbar-end">
+        <a class="navbar-item">About</a>
+        <a class="navbar-item">Cart</a>
+    </div>
+      
+    </div>
+  </nav>
+  
+  <!--Breadcrumbs-->
+  <div class="section pt-4 pb-0">
+    <nav class="breadcrumb has-arrow-separator">
+      <ul class="container">
+        <li><a class="has-text-grey">Shop</a></li>
+        <li><a class="has-text-grey">Real Madrid</a></li>
+        <li class="is-active"><a>Official Jerseys</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!--Product Info-->
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-3-desktop">
+         <h1 class="is-size-3-mobile is-size-1-desktop title">Real Madrid</h1>
+         <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Home Kit</h2>
+         <p>When adidas designed Real Madrid's home kit, they looked to the long-held traditions of the club's famous city. Inspired by the "chulapo" outfits worn at Madrid's annual San Isidro Fiesta, the houndstooth-style patterning on this football jersey gives it a dash of style.</p>
+        </div>
+        <div class="column is-6-tablet is-5-desktop has-text-centered">
+           <img src="assets/jersey.jpg" alt="jersey image" class="px-6">
+        </div>
+        <div class="column is-12-tablet is-4-desktop">
+           <div class="is-size-4 mb-4">120$</div>
+           <p class="mb-4">Free Delivery, Free Returns</p>
+           <p class="mb-4">Secure transactions with hassle free 14 days Exchange and Returns</p>
+           <form>
+            <div class="field">
+              <div class="control mb-6">
+                <div class="select is-dark">
+                  <select>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+           </form>
+           <a href="cart.html"><button class="is-warning button is-medium is-rounded">Add to Cart</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+  <div class="container">
+    <div class="columns is-variable is-8">
+      <!-- Main Content -->
+      <div class="column is-8">
+        <div class="tabs is-boxed">
+          <ul>
+            <li class="is-active" data-target="product-details">
+              <a>Product Information</a>
+            </li>
+            <li data-target="delivery-information">
+              <a>Delivery Information</a>
+            </li>
+          </ul>
+        </div>
+        <div class="px-2" id="tab-info">
+          <div id="product-details">
+            <h3 class="is-size-5 title">Product Information</h3>
+            <ul>
+              <li>Slim fit</li>
+              <li>V-neck</li>
+              <li>100% polyester (recycled)</li>
+              <li>AEROREADY</li>
+              <li>Side mesh inserts</li>
+              <li>Real Madrid embroidered crest</li>
+              <li>Colour: White</li>
+              <li>Product code: IU5011</li>
+            </ul>
+          </div>
+          <div id="delivery-information" class="is-hidden">
+            <h3 class="is-size-5 title">Delivery Information</h3>
+            <ul>
+              <li>Standard delivery within 5-7 business days</li>
+              <li>Express delivery available at checkout</li>
+              <li>Free delivery on orders over $50</li>
+              <li>Track your order online</li>
+              <li>International shipping options available</li>
+              <li>Hassle-free returns within 30 days</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Message Box -->
+      <div class="column is-4">
+        <div class="message is-dark">
+          <div class="message-header">
+            <p>Be A Part of the Madridista Family</p>
+          </div>
+          <div class="message-body">
+            <p>Join the Madridista family and show your passion for Real Madrid! Enjoy exclusive benefits, connect with fans worldwide, and be part of the legacy of greatness. Your journey with the Whites starts here!</p>
+            <div class="has-text-centered">
+              <button class="button is-warning mt-5" id="signup">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section is-hidden-mobile">
+    <div class="container">
+      <h3 class="title has-text-centered is-size-4">Related Products</h3>
+      <div class="columns mt-4 is-8 is-variable is-centered">
+         <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="assets/trainingkit.jpg" alt="trainingkit">
+            </div>
+            <div class="card-content">
+              <p>95$</p>
+              <p class="title is-size-5">Training Kit</p>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="" class="has-text-grey">View</a>
+                </p>
+            </footer>
+          </div>
+          </div>
+         <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="assets/cap.webp" alt="cap">
+            </div>
+            <div class="card-content">
+              <p>75$</p>
+              <p class="title is-size-5">Official Cap</p>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="" class="has-text-grey">View</a>
+                </p>
+            </footer>
+          </div>
+        </div>     
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6">
+              <img src="assets/shorts.jpg" alt="shorts">
+            </div>
+            <div class="card-content">
+              <p>40$</p>
+              <p class="title is-size-5">Shorts</p>
+            </div>
+            <footer class="card-footer">
+                <p class="card-footer-item">
+                  <a href="" class="has-text-grey">View</a>
+                </p>
+            </footer>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </section>
+
+  <!--modal-->
+  <div class="modal is-active">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-white py-5 px-5">
+      <h3 class="title mb-6">Join the Club</h3>
+      <form>
+        <div class="field">
+          <label for="" class="label">Name</label>
+          <div class="control">
+             <input type="text" class="input" placeholder="Name">
+          </div>
+        </div>
+        <div class="field">
+          <label for="" class="label">Email</label>
+          <div class="control">
+             <input type="email" class="input" placeholder="Email">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="" class="checkbox">
+              <input type="checkbox">
+              I agree to the Terms and Conditions
+            </label>
+          </div>
+        </div>
+        <div class="mt-6 has-text-centered">
+           <button class="button is-warning">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>@Copyright 2024 Real Madrid CF</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
